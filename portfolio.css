@@ -1,0 +1,315 @@
+/* General Reset */
+/* General Reset */
+body {
+      margin: 0;
+      font-family: monospace;
+      background-image: url("thumb-1920-1323881.png"); /* Replace with your image path */
+      background-size: cover; /* Ensures the image covers the whole screen */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents repetition of the image */
+      background-color: #4A4A4A; /* Fallback color if the image doesn't load */
+    }
+
+
+.navbar {
+  background-color: black;
+  padding: 20px 40px; /* Increased padding for a larger navbar */
+  display: flex;
+  justify-content: space-between; /* Aligns items to the left and right */
+  align-items: center; /* Vertically centers items */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  margin: 0 25px; /* Increased spacing between items */
+  padding: 10px 0; /* Increased padding for better clickability */
+  position: relative;
+  font-size: 1.5rem; /* Increased font size */
+}
+
+.nav-item:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px; /* Increased thickness of the underline */
+  width: 100%;
+  background-color: yellow;
+}
+
+.nav-right {
+  color: white;
+  font-size: 1.5rem; /* Matches the font size of the navigation items */
+  font-weight: bold; /* Makes the text stand out */
+  text-decoration: none;
+}
+
+
+
+
+#Greeting  {
+  text-align: center; /* Centers the text horizontally */
+  margin-top: 20px; /* Adds space between the banner and the BodyText */
+}
+
+#Greeting h1 {
+  text-align: center; /* Centers the text horizontally */
+  margin-top: 20px; /* Adds space between the banner and the BodyText */
+}
+
+
+/* BodyText Styling */
+#BodyText {
+  text-align: center; /* Centers the text horizontally */
+  margin-top: 60px; /* Adds space between the banner and the BodyText */
+}
+
+#BodyText h1 {
+  font-size: 2.5rem; /* Adjusts the font size of the header */
+  color: #333; /* Darker color for the header */
+  margin: 0; /* Removes default margin */
+}
+
+#skill   {text-align: center; /* Centers the text horizontally */
+  margin-top: 60px; /* Adds space between the banner and the BodyText */
+}
+
+#skill h1 {
+  font-size: 1.5rem; /* Adjusts the font size of the header */
+  color: #333; /* Darker color for the header */
+  margin: 0; /* Removes default margin */
+}
+
+
+#cta  {
+  text-align: center; /* Centers the text horizontally */
+  margin-top: 60px; /* Adds space between the banner and the BodyText */
+}
+
+#cta h1 {
+  font-size: 2.5rem; /* Adjusts the font size of the header */
+  color: #333; /* Darker color for the header */
+  margin: 0; /* Removes default margin */
+}
+
+
+
+.imagebox-container {
+  display: flex; /* Align image and description side by side */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add space between the image and description */
+  margin-top: 20px; /* Spacing above the container */
+  margin-left: 40px; /* Move the entire container to the right */
+}
+
+
+.imagebox {
+  width: 217px; /* Set the container width to match the image */
+  height: 422px; /* Set the container height to match the image */
+  border: 2px solid black; /* Add a black border around the box */
+  padding: 5px; /* Add some space between the border and image */
+  display: inline-block; /* Ensures the box wraps tightly around the image */
+  background-color: #f9f9f9; /* Optional: background color */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+  margin-top: 20px;	
+}
+
+.imagebox img {
+  width: 100%; /* Ensure the image fits perfectly within the container */
+  height: 100%; /* Maintain the size of the image as specified */
+  border-radius: 4px; /* Optional: rounded image corners */
+  object-fit: cover; /* Ensures the image is cropped appropriately, if needed */
+}
+
+.imagebox-description {
+  font-family: monospace; /* Monospace font for the description */
+  font-size: 16px; /* Set font size */
+  color: #333; /* Darker text color */
+  max-width: 600px; /* Limit the width of the description */
+  line-height: 1.5; /* Improve readability */
+  margin: 20; /* Remove any unintended margins */
+  padding: 0; /* Remove any unintended padding */
+}
+
+
+
+
+
+
+
+.see-more-bar {
+  margin-top: 20px; /* Add space above the bar */
+  text-align: center; /* Center the bar */
+  background-color: #4CAF50; /* Green background */
+  padding: 10px; /* Padding for better clickability */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 150px; /* Set the width of the bar */
+  margin-left: auto;
+  margin-right: auto; /* Center the bar horizontally */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.see-more-link {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  display: inline-block; /* Ensures padding works correctly */
+}
+
+.see-more-bar:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+
+
+
+
+
+.arts-bar, .adobe-bar {
+  width: 300px; /* Initial width of the bar */
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+  margin: 20px 0; /* Add vertical spacing and remove centering */
+  display: block; /* Ensure the element behaves like a block */
+  position: relative;
+  left: 20px; /* Align to the left with a small offset */
+}
+
+.image-container {
+  display: none; /* Hide the image initially */
+  margin: 30px 0; /* Add vertical spacing and remove centering */
+  text-align: left; /* Align the content to the left */
+  position: relative; /* Allow positioning adjustments */
+  left: 20px; /* Align the container to the left with the same offset as the bars */
+}
+
+.image-container img {
+  width: 422px; /* Fixed width */
+  height: 422px; /* Fixed height */
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image fills the specified dimensions */
+}
+
+.image-description {
+  margin-top: 10px; /* Add some space between the image and the description */
+  font-size: 1rem; /* Set the font size */
+  color: #555; /* Subtle text color */
+  text-align: left; /* Align text to the left */
+  font-family: Arial, sans-serif; /* Optional: Change the font */
+}
+
+.see-more-bar {
+  width: 300px; /* Same width as the toggle bars */
+  background-color: #007BFF; /* Blue background */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0; /* Add vertical spacing and remove centering */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative; /* Allow positioning adjustments */
+  left: 20px; /* Align the button to the left with the same offset as the bars and images */
+}
+
+.see-more-bar:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+
+
+
+
+
+/* Container for the two boxes */
+.box-container {
+  display: flex; /* Align boxes side by side */
+  justify-content: center; /* Center the boxes within the container */
+  gap: 20px; /* Space between the boxes */
+  margin-top: 40px; /* Add space above the container */
+}
+
+/* Individual box styling */
+.box {
+  width: 250px; /* Box width */
+  border: 10px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding inside the box */
+  text-align: center; /* Center-align content inside the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Image styling */
+.box-image img {
+  width: 200px; /* Image width */
+  height: 200px; /* Image height */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  border-radius: 4px; /* Optional: rounded corners for the image */
+  margin-bottom: 10px; /* Space between image and description */
+}
+
+/* Description styling */
+.box-description p {
+  font-family: monospace; /* Monospace font for description */
+  font-size: 19px; /* Font size */
+  color: #333; /* Text color */
+  line-height: 1.5; /* Improve readability */
+  margin: 0; /* Remove default margins */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Fooster p  {
+    border-top: solid black;
+    text-align: center;
+    clear: both;
+    margin-top: 200px;
+    font-size: 1.5rem;
+    background-color: black;  /* Black background */
+    color: white;  /* White text color */
+    font-family: monospace;  /* Monospace font */
+    padding: 10px;  /* Optional padding for better spacing */
+}
+
+
+
+
+#boarder  {background-color: #cccccc; width: 1000px; margin:0px auto;}
+
+#boarder2  {background-color: white; width: 900px; margin:0px auto;}
+
+
+
